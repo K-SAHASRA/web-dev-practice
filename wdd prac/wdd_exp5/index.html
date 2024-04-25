@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="myApp">
+<head>
+  <meta charset="UTF-8">
+  <title>AngularJS SPA</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.9/angular.min.js"></script>
+  <script src="script.js"></script>
+</head>
+<body ng-controller="MainController">
+
+  <h1>AngularJS epx5</h1>
+
+
+  <div ng-show="selectedSection === 'calculator'">
+    <h2>Calculator</h2>
+    <label>Number 1:</label>
+    <input type="number" ng-model="calculator.num1" /><br>
+    
+    <label>Operator:</label>
+    <select ng-model="calculator.operator">
+      <option value="+">+</option>
+      <option value="-">-</option>
+      <option value="*"></option>
+      <option value="/">/</option>
+    </select><br>
+    
+    <label>Number 2:</label>
+    <input type="number" ng-model="calculator.num2" />
+    <br>
+    <button ng-click="calculate()">Calculate</button>
+    <br>
+    <div><label>Result:</label> <span>{{ calculator.result }}</span></div>
+  </div>
+
+
+  <div ng-show="selectedSection === 'login'">
+    <h2>Simple Login Page</h2>
+        
+        <form name="loginForm" novalidate>
+            <div>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" ng-model="user.name" ng-minlength="3" ng-maxlength="8"
+                    required>
+                <span class="error" ng-show="loginForm.name.$error.required && loginForm.name.$dirty">Name is
+                    required.</span>
+                <span class="error" ng-show="loginForm.name.$error.minlength && loginForm.name.$dirty">Name must be
+                    at least 3 characters.</span>
+                <span class="error" ng-show="loginForm.name.$error.maxlength && loginForm.name.$dirty">Name must be
+                    at most 8 characters.</span>
+            </div>
+            <div>
+                <label for="username">Username (Email):</label>
+                <input type="email" id="username" name="username" ng-model="user.username" required>
+                <span class="error" ng-show="loginForm.username.$error.required && loginForm.username.$dirty">Username
+                    is required.</span>
+                <span class="error" ng-show="loginForm.username.$error.email && loginForm.username.$dirty">Invalid
+                    email address.</span>
+            </div>
+            <div>
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" ng-model="user.password" ng-minlength="6"
+                    required>
+                <span class="error" ng-show="loginForm.password.$error.required && loginForm.password.$dirty">Password
+                    is required.</span>
+                <span class="error" ng-show="loginForm.password.$error.minlength && loginForm.password.$dirty">Password
+                    must be at least 6 characters.</span>
+            </div>
+            <button ng-click="register()" ng-disabled="loginForm.$invalid">Register</button>
+        </form>
+        <div ng-if="registrationSuccess" class="success">Registration successful!</div>
+    </div>
+
+
+  <!-- Navigation -->
+  <div>
+    <label>Select Section:</label>
+    <select ng-model="selectedSection" ng-options="section for section in sections"></select>
+  </div>
+
+
+</body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.8.3/angular.min.js"></script>
+    <script src="script.js"></script>
+</head>
+<body>
+    <div ng-app="myapp" ng-controller="mycontrol">
+        <p>{{10+20}}</p>
+        <p> {{info = [{name:"sahasra", age:"21"},{name:"ankit",age:"21"},{name:"likki",age:"21"} ]}} </p>
+        <input type="text" ng-model="name">
+        <p ng-bind="name"></p>
+        <li ng-repeat="x in info">
+            <ol> {{"NAME="+x.name+" AGE="+x.age|uppercase}} </ol>
+        </li>
+
+        <input type="text" ng-model="fname">
+        <input type="text" ng-model="lname">
+        <p> {{result()}} </p>
+        <p>{{errormsg}} </p>
+    </div>
+</body>
+</html>

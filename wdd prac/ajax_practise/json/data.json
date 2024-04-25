@@ -1,0 +1,20 @@
+[
+    {
+        "name":"kia",
+        "price":"20k",
+        "model":"m1"
+
+    },
+    {
+        "name":"gia",
+        "price":"60k",
+        "model":"m2"
+
+    },
+    {
+        "name":"lia",
+        "price":"80k",
+        "model":"m3"
+
+    }
+]

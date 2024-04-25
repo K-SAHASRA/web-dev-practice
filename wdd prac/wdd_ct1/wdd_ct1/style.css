@@ -1,0 +1,19 @@
+div{
+    border: 10px;
+    border-style: double;
+    border-radius: 30px;
+    border-color: aqua;
+    animation-name: example;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    transition: border-style 3s;
+    animation-delay: -2s;
+}
+div:hover{
+    border-style: dotted;
+}
+@keyframes example{
+    50%{border-color: aqua;}
+    100%{border-color: black;}
+    
+}

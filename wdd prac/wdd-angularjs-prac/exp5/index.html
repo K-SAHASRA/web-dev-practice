@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>calculator</title>
+    <script src=" https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.8.3/angular.min.js"></script>
+    <script src="script.js"></script>
+</head>
+<body>
+    <div ng-app="myapp" ng-controller="myctrl">
+        <input type="text" ng-model="num1">
+        <input type="text" ng-model="num2">
+        <label for="operator">enter the operator</label>
+        <input type="text" ng-model="operator">
+        <button ng-click="calculate()">submit</button>
+        <h1> the resut is</h1>
+        <p> {{result}} </p>        
+
+    </div>
+</body>
+</html>

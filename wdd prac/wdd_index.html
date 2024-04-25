@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Using Html5 tags</title>
+
+</head>
+<body>
+    <div>
+        <nav> <a href="https://www.w3schools.com/howto/howto_make_a_website.asp">Html_docs</a></nav>
+        <header>
+            <h1>Book page</h1>
+        </header>
+    </div>
+    <div>
+        <h3>About Book </h3>
+        <p>Lorem ipsum dolor sit amet,consectetur adipiscing elit, 
+            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+            Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
+            Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+
+        </p>
+        <h3>Request a book copy</h3>
+        <label for="firstname">Enter your Firstname  </label><input type="text" name="firstname" id="form_elements" placeholder="enter legal name"><br>
+        <label for="lastname">Enter your lastname  </label><input type="text" name="lastname" id="form_elements"><br>
+        <label for="phoneno">Phone no  </label><input type="tel" name="phoneno" id="form_elements" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" ><br>
+        <label for="email">Email  </label><input type="email" name="emailid" id="form_elements"><br>
+        <label for="date&time">Date  </label><input type="datetime-local" name="date&time" id="form_elements"><br>
+        <label for="colour">Select ur Favorite colour  </label><input type="color" name="color" id="form_elements"><br>
+        <label for="checkbox">Are you above 18:  </label><input type="checkbox" name="checkbox" id="form_elements"><br>
+        <label for="imgage-upload">Upload ur image  </label><input type="file" name="image_upload" id="form_elements"><br>
+        <!-- <label for="subject">Select ur Subject  </label><input list="subjects" name="subject" id="form_elements">
+        <datalist id="form_elements">
+        <option value="queing theory"></option>
+        <option value="wdd"></option>
+        <option value="devops"></option>
+        </datalist><br> -->
+        <label for="subjects"> Select the subject  </label>
+        <input list="subjects" name="subject" id="subject">
+
+            <datalist id="subjects">
+            <option value="maths"></option>
+            <option value="Firefox"></option>
+            <option value="Chrome"></option>
+            <option value="Opera"></option>
+            <option value="Safari"></option>
+            </datalist>
+        <button type="submit">Submit</button>\
+
+    </div>
+    <div>
+        <section>
+            <article>
+                <h1>About Author</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+                    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                    Elementum nibh tellus molestie nunc. Sem viverra aliquet eget sit amet tellus cras. 
+                    Nunc sed blandit libero volutpat sed cras ornare arcu.
+                     Maecenas volutpat blandit aliquam etiam erat velit scelerisque in.
+                </p>
+            </article>
+            <article>
+                <img src="https://media.springernature.com/full/springer-static/cover-hires/book/978-0-8176-8421-1" alt="book img" height="550px" width="350px">
+            </article>
+        </section>
+        <section>
+            <h3>about publisher</h3>
+            <aside>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+                    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                    Elementum nibh tellus molestie nunc. Sem viverra aliquet eget sit amet tellus cras. 
+                    Nunc sed blandit libero volutpat sed cras ornare arcu.</p>
+            </aside>
+             <figure><img src="https://www.google.com/imgres?imgurl=https%3A%2F%2Fscribemedia.com%2Fwp-content%2Fuploads%2F2020%2F01%2FHow-To-Self-Publish-A-Book-On-Amazon-700x406.jpg&tbnid=J5yDoSTEeJn5YM&vet=12ahUKEwje2p269IGEAxVlpWMGHaqwARAQMygFegQIARBi..i&imgrefurl=https%3A%2F%2Fscribemedia.com%2Famazon-self-publishing%2F&docid=SxYHbYGUJt3qMM&w=700&h=406&q=publishing%20how%20se%20img&ved=2ahUKEwje2p269IGEAxVlpWMGHaqwARAQMygFegQIARBi" alt="book img" height="550px"  width="350px"></figure>   
+        </section>
+    </div>
+    <div>
+        <summary>
+            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                    Elementum nibh tellus molestie nunc. Sem viverra aliquet eget sit amet tellus cras. 
+                    Nunc sed blandit libero volutpat sed cras ornare arcu.
+        </summary>
+
+        <details>
+            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                    Elementum nibh tellus molestie nunc. Sem viverra aliquet eget sit amet tellus cras. 
+                    Nunc sed blandit libero volutpat sed cras ornare arcu.
+        </details>
+    </div>
+    
+</body>
+</html>

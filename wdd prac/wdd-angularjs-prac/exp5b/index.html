@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login</title>
+    <script src=" https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.8.3/angular.min.js"></script>
+    <script src="script.js"></script>
+    
+</head>
+<body>
+    <div ng-app="myapp" ng-controller="myctrl">
+        <label for="">name</label>
+        <input type="text" ng-model="name"><br>
+        <label for="">usernmae</label>
+        <input type="email" ng-model="email">
+        <label for="">password</label>
+        <input type="password" name="" id="" ng-model="password">
+        <button type="submit" ng-click="verify()">submit</button>
+    </div>
+    
+</body>
+</html>
